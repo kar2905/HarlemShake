@@ -1,5 +1,5 @@
 <?php
-$ch = curl_init("https://www.googleapis.com/youtube/v3/search?part=snippet&order=date&q=harlem+shake&type=video&videoDuration=short&fields=items&key=AIzaSyCNWA-5u4bP8v80Msft_e54-JwAFNmGviA");
+$ch = curl_init("https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&order=date&q=harlem+shake&type=video&videoDuration=short&fields=items&key=AIzaSyCNWA-5u4bP8v80Msft_e54-JwAFNmGviA");
 
 curl_setopt($ch, CURLOPT_HEADER, 0);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -90,7 +90,7 @@ curl_close($ch);
         }
         function onPlayerStateChange(event) {
             if (event.data == YT.PlayerState.PLAYING ) {
-                setInterval(countit, 1000);
+                //setInterval(countit, 1000);
             }
             if (event.data == YT.PlayerState.ENDED ) {
                 videoPlayedCounter++;
