@@ -31,6 +31,8 @@ curl_close($ch);
 ?>
 <html>
 <head>
+<meta property="og:title" content="Watch Harlem Shake on an endless loop"/>
+<meta property="og:url" content="http://watchharlemshake.com"/>
 <title>Watch Harlem Shake on an endless loop</title>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 </head>
