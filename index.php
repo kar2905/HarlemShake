@@ -111,7 +111,7 @@ curl_close($ch);
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38543971-1']);
+  _gaq.push(['_setAccount', 'UA-38543461-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
