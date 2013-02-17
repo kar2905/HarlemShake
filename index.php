@@ -51,6 +51,7 @@ curl_close($ch);
 </head>
 
 <body>
+<div class='shareaholic-canvas' data-shareaholic-widgets='share_buttons'></div>
     <div class="content">
     	<h2>Watch Harlem Shake on an endless loop</h2>
 	    <div id="player" class="video-holder"></div>
@@ -61,6 +62,25 @@ curl_close($ch);
             <div class="vid_desc"></div>
 		</div>
 	</div>
+<script type="text/javascript">
+//<![CDATA[
+  (function() {
+    var shr = document.createElement('script');
+    shr.src = '//dtym7iokkjlif.cloudfront.net/assets/pub/shareaholic.js';
+    shr.type = 'text/javascript';
+    shr.async = 'true';
+    shr.onload = shr.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (rs && rs != 'complete' && rs != 'loaded') return;
+      var apikey = '3633e7686b3aa54bec1cd0ded2d7af10'
+      try { Shareaholic.init(apikey); } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(shr, s);
+  })();
+//]]>
+</script>
+	
 </body>
 
 
